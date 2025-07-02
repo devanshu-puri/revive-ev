@@ -17,6 +17,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.scrolled-nav > div {
+  @apply bg-[rgba(31,31,31,0.6)] backdrop-blur-md rounded-full border border-gray-700 shadow-md;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -27,6 +38,7 @@ a:hover {
 }
 
 body {
+   @apply font-sans;
   margin: 0;
   display: flex;
   place-items: center;
