@@ -13,18 +13,26 @@ const Navbar = () => {
         {/* Right: Links */}
         <nav className="flex items-center space-x-4 text-sm font-medium">
           <a href="#" className="text-white hover:bg-[#97E6B8] hover:text-black px-3 py-1 rounded transition">
-  Battery Swap
-</a>
-<a href="#" className="text-white hover:bg-[#97E6B8] hover:text-black px-3 py-1 rounded transition">
-  About
-</a>
-<a href="#" className="text-white hover:bg-[#97E6B8] hover:text-black px-3 py-1 rounded transition">
-  Careers
-</a>
-<a href="#" className="text-white hover:bg-[#97E6B8] hover:text-black px-3 py-1 rounded transition">
-  Contact
-</a>
-          <button className="bg-[#2ECC71] text-black px-4 py-1 rounded-lg hover:bg-white hover:text-black transition">Login</button>
+            Battery Swap
+          </a>
+          <a href="#" className="text-white hover:bg-[#97E6B8] hover:text-black px-3 py-1 rounded transition">
+            About
+          </a>
+          <a href="#" className="text-white hover:bg-[#97E6B8] hover:text-black px-3 py-1 rounded transition">
+            Careers
+          </a>
+          <a href="#" className="text-white hover:bg-[#97E6B8] hover:text-black px-3 py-1 rounded transition">
+            Contact
+          </a>
+
+          {/* ✅ New Services Link */}
+          <a href="/services" className="text-white hover:bg-[#97E6B8] hover:text-black px-3 py-1 rounded transition">
+            Services
+          </a>
+
+          <button className="bg-[#2ECC71] text-black px-4 py-1 rounded-lg hover:bg-white hover:text-black transition">
+            Login
+          </button>
         </nav>
       </div>
     </div>
