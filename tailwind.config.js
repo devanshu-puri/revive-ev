@@ -21,6 +21,7 @@ export default {
         primary: "#2ECC71",
         charcoal: "#1F1F1F",
         lightgray: "#F4F4F4",
+        secondary: "#97e6b8",
       },
       fontFamily: {
         sans: ['"SF Pro Display"', 'system-ui', 'sans-serif'],

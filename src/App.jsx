@@ -1,20 +1,20 @@
-// @ts-nocheck
 import React from 'react';
-import './index.css'; // Ensure Tailwind is imported
+import './index.css';
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
-import useNavScroll from './hooks/useNavScroll';
+import Services from './pages/services';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  useNavScroll(); // ✅ Enables sticky navbar scroll behavior
-
   return (
     <div className="bg-[#1F1F1F] min-h-screen text-white overflow-x-hidden">
-      {/* ✅ Navbar from separate file */}
       <Navbar />
 
-      {/* ✅ Full homepage (Hero + other sections) */}
-      <Homepage />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/services" element={<Services />} />
+        {/* Add more routes like About, Contact as needed */}
+      </Routes>
     </div>
   );
 }
