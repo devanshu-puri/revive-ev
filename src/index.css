@@ -21,6 +21,16 @@
   @apply bg-[rgba(31,31,31,0.6)] backdrop-blur-md rounded-full border border-gray-700 shadow-md;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+html, body, #root {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 * {
   box-sizing: border-box;

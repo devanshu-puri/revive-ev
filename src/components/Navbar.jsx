@@ -12,10 +12,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-4 left-4 right-4 z-50 transition-all duration-300 rounded-[40px] ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "backdrop-blur-md bg-black/50 shadow-md"
-          : "bg-transparent"
+          ? "bg-black/70 backdrop-blur-md shadow-md rounded-b-2xl"
+          : "bg-black"
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
@@ -34,13 +34,15 @@ const Navbar = () => {
           {[
             { name: "Home", href: "/" },
             { name: "Services", href: "/services" },
+            { name: "Battery Swap", href: "/battery-swap" },
             { name: "About", href: "/about" },
-            { name: "Contact", href: "/contact" },
+            { name: "Careers", href: "/careers" },
+
           ].map((item) => (
             <Link
               key={item.name}
               to={item.href}
-              className="text-white px-3 py-1 rounded-md transition-all duration-300 hover:bg-[#97e6b8] hover:text-black"
+              className="text-white px-3 py-1 rounded-md transition hover:bg-[#97e6b8] hover:text-black"
             >
               {item.name}
             </Link>
